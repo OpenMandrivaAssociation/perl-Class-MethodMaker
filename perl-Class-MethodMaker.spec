@@ -12,7 +12,6 @@ Summary:	Create generic methods for OO Perl
 Source:		http://search.cpan.org/CPAN/authors/id/F/FL/FLUFFY/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 This module solves the problem of having to write a bazillion
