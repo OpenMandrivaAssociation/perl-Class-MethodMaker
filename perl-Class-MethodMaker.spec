@@ -1,7 +1,7 @@
 %define	module	Class-MethodMaker
 %define	name	perl-%{module}
-%define	version	2.10
-%define	release	%mkrel 4
+%define	version	2.11
+%define	release	%mkrel 1
 
 Name:		%{name}
 Version:	%{version}
