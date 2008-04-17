@@ -9,8 +9,8 @@ Release:	%{release}
 License:	GPL or Artistic
 Group:		Development/Perl
 Summary:	Create generic methods for OO Perl
-Source:		http://search.cpan.org/CPAN/authors/id/F/FL/FLUFFY/%{module}-%{version}.tar.bz2
 Url:		http://search.cpan.org/dist/%{module}
+Source:     http://www.cpan.org/modules/by-module/Class/%{module}-%{version}.tar.gz
 BuildRequires:	perl-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
 
