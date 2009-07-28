@@ -1,18 +1,18 @@
-%define	module	Class-MethodMaker
-%define	name	perl-%{module}
-%define	version	2.15
-%define	release	%mkrel 1
+%define	upstream_name	 Class-MethodMaker
+%define	upstream_version 2.15
 
-Name:		%{name}
-Version:	%{version}
-Release:	%{release}
-License:	GPL or Artistic
-Group:		Development/Perl
+Name:		perl-%{upstream_name}
+Version:	%perl_convert_version %{upstream_version}
+Release:	%mkrel 1
+
 Summary:	Create generic methods for OO Perl
-Url:		http://search.cpan.org/dist/%{module}
-Source:     http://www.cpan.org/modules/by-module/Class/%{module}-%{version}.tar.gz
+License:	GPL+ or Artistic
+Group:		Development/Perl
+Url:		http://search.cpan.org/dist/%{upstream_name}
+Source0:    http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
+
 BuildRequires:	perl-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
+BuildRoot:	%{_tmppath}/%{name}-%{version}-%{release}
 
 %description
 This module solves the problem of having to write a bazillion
@@ -24,7 +24,7 @@ names of MethodMaker methods (methods that write methods) and
 the values are the arguments to those methods.
 
 %prep
-%setup -q -n %{module}-%{version}
+%setup -q -n %{upstream_name}-%{upstream_version}
 rm -f t/0-signature.t # debug files make it fails
 
 %build
@@ -47,4 +47,3 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Class
 %{perl_vendorarch}/auto/Class
 %{_mandir}/*/*
-
