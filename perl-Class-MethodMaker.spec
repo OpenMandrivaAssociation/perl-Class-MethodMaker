@@ -1,5 +1,5 @@
 %define	upstream_name	 Class-MethodMaker
-%define	upstream_version 2.15
+%define upstream_version 2.16
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
@@ -32,7 +32,7 @@ rm -f t/0-signature.t # debug files make it fails
 %make
 
 %check
-%{__make} test
+%make test
 
 %install
 rm -rf %{buildroot}
