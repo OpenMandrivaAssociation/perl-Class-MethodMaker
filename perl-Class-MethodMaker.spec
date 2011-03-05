@@ -1,9 +1,9 @@
 %define	upstream_name	 Class-MethodMaker
-%define upstream_version 2.16
+%define upstream_version 2.17
 
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	%mkrel 3
+Release:	%mkrel 1
 
 Summary:	Create generic methods for OO Perl
 License:	GPL+ or Artistic
