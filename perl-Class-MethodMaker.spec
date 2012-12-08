@@ -47,3 +47,114 @@ rm -rf %{buildroot}
 %{perl_vendorarch}/Class
 %{perl_vendorarch}/auto/Class
 %{_mandir}/*/*
+
+
+%changelog
+* Sun Jan 22 2012 Oden Eriksson <oeriksson@mandriva.com> 2.180.0-3mdv2012.0
++ Revision: 765090
+- rebuilt for perl-5.14.2
+
+* Sat Jan 21 2012 Oden Eriksson <oeriksson@mandriva.com> 2.180.0-2
++ Revision: 763534
+- rebuilt for perl-5.14.x
+
+* Sun Apr 17 2011 Guillaume Rousse <guillomovitch@mandriva.org> 2.180.0-1
++ Revision: 653985
+- update to new version 2.18
+
+* Sat Mar 05 2011 Sandro Cazzaniga <kharec@mandriva.org> 2.170.0-1
++ Revision: 642066
+- new version
+
+* Sun Aug 01 2010 Funda Wang <fwang@mandriva.org> 2.160.0-3mdv2011.0
++ Revision: 564385
+- rebuild for perl 5.12.1
+
+* Tue Jul 20 2010 Jérôme Quelin <jquelin@mandriva.org> 2.160.0-2mdv2011.0
++ Revision: 555231
+- rebuild
+
+* Wed Jul 14 2010 Jérôme Quelin <jquelin@mandriva.org> 2.160.0-1mdv2011.0
++ Revision: 553074
+- update to 2.16
+
+* Tue Jul 28 2009 Jérôme Quelin <jquelin@mandriva.org> 2.150.0-1mdv2010.1
++ Revision: 401704
+- rebuild using %%perl_convert_version
+- fixed license field
+
+* Mon Feb 16 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.15-1mdv2009.1
++ Revision: 340755
+- update to new version 2.15
+
+* Sun Feb 15 2009 Guillaume Rousse <guillomovitch@mandriva.org> 2.14-1mdv2009.1
++ Revision: 340538
+- update to new version 2.14
+
+* Tue Dec 09 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.13-1mdv2009.1
++ Revision: 312304
+- update to new version 2.13
+
+* Mon Jul 21 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.12-1mdv2009.0
++ Revision: 239328
+- update to new version 2.12
+
+* Thu Apr 17 2008 Guillaume Rousse <guillomovitch@mandriva.org> 2.11-1mdv2009.0
++ Revision: 195214
+- new version
+
+* Mon Jan 14 2008 Pixel <pixel@mandriva.com> 2.10-4mdv2008.1
++ Revision: 151354
+- rebuild for perl-5.10.0
+
+  + Olivier Blin <blino@mandriva.org>
+    - restore BuildRoot
+
+  + Thierry Vignaud <tv@mandriva.org>
+    - kill re-definition of %%buildroot on Pixel's request
+    - rebuild
+
+* Tue May 01 2007 Olivier Thauvin <nanardon@mandriva.org> 2.10-1mdv2008.0
++ Revision: 19800
+- 2.10
+
+
+* Mon Aug 14 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 08/14/06 21:41:16 (56108)
+- rebuild
+
+* Mon Aug 14 2006 Olivier Thauvin <nanardon@mandriva.org>
++ 08/14/06 21:35:06 (56107)
+Import perl-Class-MethodMaker
+
+* Mon Dec 19 2005 Guillaume Rousse <guillomovitch@mandriva.org> 2.08-1mdk
+- New release 2.08
+- spec cleanup
+- fix directory ownership
+- fix sources URL
+- better summary
+- drop patch 0, fixed upstream
+
+* Fri Apr 29 2005 Rafael Garcia-Suarez <rgarciasuarez@mandriva.com> 2.07-1mdk
+- 2.07
+- Patch #0, to allow to install in vendor_perl
+
+* Wed Mar 16 2005 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 2.06-1mdk
+- 2.06
+
+* Mon Feb 07 2005 Rafael Garcia-Suarez <rgarciasuarez@mandrakesoft.com> 2.05-1mdk
+- 2.05
+- no more arch-independent
+
+* Wed Jun 02 2004 Per �yvind Karlsen <peroyvind@linux-mandrake.com> 2.02-1mdk
+- 2.02
+- cosmetics
+- use %%makeinstall_std macro
+
+* Mon Feb 23 2004 Olivier Thauvin <thauvin@aerov.jussieu.fr> 1.12-1mdk
+- 1.12
+- own dirs
+
+* Wed Aug 27 2003 Fran�ois Pons <fpons@mandrakesoft.com> 1.11-1mdk
+- 1.11.
+
