@@ -1,5 +1,5 @@
 %define	upstream_name	 Class-MethodMaker
-%define upstream_version 2.20
+%define upstream_version 2.21
 
 Summary:	Create generic methods for OO Perl
 Name:		perl-%{upstream_name}
@@ -8,7 +8,7 @@ Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Class/Class-MethodMaker-%{upstream_version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Class/%{upstream_name}-%{upstream_version}.tar.gz
 BuildRequires:	perl-devel
 
 %description
@@ -39,5 +39,6 @@ rm -f t/0-signature.t # debug files make it fails
 %{perl_vendorarch}/Class
 %{perl_vendorarch}/auto/Class
 %{_mandir}/man3/*
+
 
 
