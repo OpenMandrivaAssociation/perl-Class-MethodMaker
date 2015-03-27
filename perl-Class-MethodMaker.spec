@@ -1,10 +1,10 @@
 %define	upstream_name	 Class-MethodMaker
-%define upstream_version 2.21
+%define upstream_version 2.23
 
 Summary:	Create generic methods for OO Perl
 Name:		perl-%{upstream_name}
 Version:	%perl_convert_version %{upstream_version}
-Release:	6
+Release:	1
 License:	GPLv2+ or Artistic
 Group:		Development/Perl
 Url:		http://search.cpan.org/dist/%{upstream_name}
@@ -25,7 +25,7 @@ the values are the arguments to those methods.
 rm -f t/0-signature.t # debug files make it fails
 
 %build
-%{__perl} Makefile.PL INSTALLDIRS=vendor
+perl Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
@@ -39,6 +39,3 @@ rm -f t/0-signature.t # debug files make it fails
 %{perl_vendorarch}/Class
 %{perl_vendorarch}/auto/Class
 %{_mandir}/man3/*
-
-
-
