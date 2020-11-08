@@ -30,13 +30,10 @@ rm -f t/0-signature.t # debug files make it fails
 %make_build
 
 %install
-%make)install
+%make_install
 
 %files
 %doc README TODO Changes
 %{perl_vendorarch}/Class
 %{perl_vendorarch}/auto/Class
 %{_mandir}/man3/*
-
-
-
